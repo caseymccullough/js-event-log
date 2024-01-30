@@ -1,0 +1,49 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+section {
+    padding: 12px;
+}
+
+fieldset{
+    margin-bottom: 5px;
+    border: none;
+    padding: 0;
+    max-width: 90%;
+}
+
+fieldset input {
+    max-width: 95%;
+  }
+
+#section-form {
+    background-color: azure;
+    border: solid rgb(14, 10, 240) 2px;
+    border-radius: 10px;
+    width: 35%;
+}
+
+#flex{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    column-gap: 10px;
+    align-items: flex-start;
+}
+
+#section-log {
+    width: 65%;
+    max-height: 90vh; /* 90 percent of visible vertical screen */
+    display: grid;
+    grid-template-rows: auto min-max(0, 80%);
+}
+
+#last-n-events{
+    overflow: auto; /* Overflow content is clipped at the element's padding box, 
+                        and overflow content can be scrolled into view. */
+    border: 1px solid black;
+    border-radius: 5px;
+    max-height: 100%;
+}

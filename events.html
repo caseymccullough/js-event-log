@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src = "js/script.js"></script>
+
+     <title>Events JS</title>
+</head>
+<body>
+    <div id="flex">
+        <section id="section-form">
+            <h1 id="welcome">Events</h1>
+            <p id="explanation">Note all the events that are regularly triggered in a web application!</p>
+            <form action="" method="post" id="contact-form">
+                <fieldset id="fs-1">
+                    <label id= "name-label" for="name">Name:</label>
+                    </br>
+                    <input type="text" name="name" id="name"/>
+                </fieldset>
+                <fieldset id="fs-2">
+                    <label id="email-label" for="email">Email:</label><br />
+                    <input type="email" name="email" id="email" />
+                  </fieldset>
+                  <input id="save-button" type="button" value="Save"> 
+                  <input id="reset-button" type="reset" value="Cancel">
+            </form>
+        </section>
+        <section id="section-log">
+            <div>
+                <h1>Event Log <input type="button" id="reset-event-log" value="Reset event log"></h1>
+                <p>So far, <span id="total-events">0</span> events have been published. Last <span id="n-events">0</span> events:</p>
+            </div>
+            <p id="last-n-events"></p>
+        </section>
+    </div>
+    
+</body>
+</html>
